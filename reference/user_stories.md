@@ -56,7 +56,7 @@ The WHOs, WHATs, and HOWs of the user interface we're building
 - I can read the current version of the handbook.
 
 
-##As an employees
+##As an employee
 ####when I login
 - I am directed to my dashboard.
 - localStorage remembers my authentication.
