@@ -1,5 +1,5 @@
 #User Stories
-The WHOs, WHATs, HOWs, and WHYs of the user interface we're building
+The WHOs, WHATs, and HOWs of the user interface we're building
 
 ##As a prospective client
 ####when I visit the home page
@@ -22,16 +22,20 @@ The WHOs, WHATs, HOWs, and WHYs of the user interface we're building
 - I am presented wth a friendly feedback message, indicating it's success.
 - the feedback message gently fades away after 3 seconds.
 
+
 ##As the administrator
 ####when I login
 - I am directed to an administration page.
 - localStorage remembers my authentication.
-- I am redirected to the administration page in future visits to the home page.
+- I am automatically redirected to the admin page in future visits to the home page.
 
 ####when I visit that administration page
 - I can see the current schedule.
+- I can see days that have shifts highlighted on the current schedule.
+- I can see days with unassigned shifts highlighted in red.
 - I can add employees.
-- I can click navigate to scheduling, the handbook, or specific days in the current schedule.
+- I can click navigate to scheduling, the handbook, or logout with one click.
+- I can navigate to specific day pages by clicking in the current schedule.
 
 ####when I visit scheduling
 - I can see the current schedule.
@@ -50,4 +54,26 @@ The WHOs, WHATs, HOWs, and WHYs of the user interface we're building
 
 ####when I visit the handbook
 - I can read the current version of the handbook.
-- I can edit the handbook.
+
+
+##As an employees
+####when I login
+- I am directed to my dashboard.
+- localStorage remembers my authentication.
+- I am automatically redirected to my dashboard in future visits to the home page.
+
+####when I visit my dashboard
+- I can see the current schedule.
+- I can navigate to a more detailed schedule, the handbook, or logout with one click.
+- I can use a form to request off.
+- I can see a breakout of the next upcoming shift.
+- I can see a map of the location of the next shift.
+- I can see the hours of my next shift.
+- I can see days in which I work highlighted in the current schedule.
+- I can click the days in the current schedule to navigate to specific day pages.
+
+####when I visit specific day pages
+- I can see my shift's location and hours on that day.
+
+####when I visit the handbook
+- I can read the current version of the handbook.
