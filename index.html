@@ -16,18 +16,27 @@
 
 <body>
     <header>
-        <div class="container">
-            <img alt="Mackintosh Security Logo" title="Mackintosh Security Logo" src="assets/img/logo.png">
-            <nav>
-                <ul>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#team">team</a></li>
-                    <li><a href="#contact">contact us</a></li>
-                    <!-- OAuth2.0 link needs to be placed here! -->
-                    <li><a href="#">login</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <a class="navbar-brand" href="#landing">
+                    <img alt="Mackintosh Security Logo" title="Mackintosh Security Logo" src="assets/img/logo.png">
+                </a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#nav_links">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav_links">
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#team">team</a></li>
+                        <li><a href="#contact">contact us</a></li>
+                        <!-- OAuth2.0 link needs to be placed here! -->
+                        <li><a href="#">login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <section id="landing">
@@ -46,7 +55,7 @@
                 <figure>
                     <img alt="security badge" src="assets/img/guard-icon.png">
                     <figcaption>Experienced Guards</figcaption>
-                    <p>Our guards undergo rigorous professional screening and extensive training. We hire the best, and never stop improving.</p>
+                    <p>Our guards undergo rigorous professional screening and extensive training. We hire the best, and we never stop improving.</p>
                 </figure>
                 <figure>
                     <img alt="tailor made" src="assets/img/tailor-icon.png">
