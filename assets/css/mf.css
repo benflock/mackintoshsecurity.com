@@ -1,0 +1,14 @@
+/*GLOBAL OVERRIDES*/
+li {
+  list-style: none;
+}
+section {
+  padding-top: 70px;
+}
+/*HEADER*/
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
