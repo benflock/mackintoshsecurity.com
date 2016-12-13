@@ -17,6 +17,13 @@ section, nav {
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+.spacer {
+  min-height: 50vh;
+  background-color: black;
+}
+.no-display {
+  display: none;
+}
 .navbar-brand img {
   height: 30px;
   margin-right: 4px;
