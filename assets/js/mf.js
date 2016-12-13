@@ -11,3 +11,8 @@ $('a[href*="#"]:not([href="#"])').click(function() {
         }
     }
 });
+
+//form submission
+$('#contact_form').submit(function(){
+  event.preventDefault();
+});
