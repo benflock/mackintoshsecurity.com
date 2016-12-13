@@ -17,14 +17,33 @@ section, nav {
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+.navbar-brand img {
+  height: 30px;
+  margin-right: 4px;
+}
+.tiny {
+  font-size: .65em;
+}
+.bold {
+  font-weight: 900;
+}
+.line-height-1 {
+  line-height: 1;
+}
 #contact_form input {
   width: 100%;
 }
 #contact_form textarea {
   width: 100%;
 }
+.white-font {
+  color: #fff;
+}
 .down-10 {
   margin-top: 10vh;
+}
+.inline {
+  display: inline-block;
 }
 .no-radius {
   border-radius: 0;
