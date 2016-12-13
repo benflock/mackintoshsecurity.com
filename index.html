@@ -7,7 +7,7 @@
     <meta name="description" content="Mackintosh Security provides superior service in customized security consulting from professional screened, highly experienced guards in the Denver Metro area">
     <title>Mackintosh Security</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="assets/css/mf.css">
     <script defer type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script defer type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-inverse no-radius">
             <div class="container">
                 <a class="navbar-brand" href="#landing">
                     <img alt="Mackintosh Security Logo" title="Mackintosh Security Logo" src="assets/img/logo.png">
@@ -42,11 +42,11 @@
         <section id="landing">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6"></div>
-                    <div class="text-right col-md-6">
+                    <div class="col-sm-6"></div>
+                    <div class="text-right col-md-6 down-50">
                         <h1>Professional Security Consultants</h1>
-                        <h2>Protect your people and property with the most experienced consultants in Colorado</h2>
-                        <a href="#contact"><button>contact us</button></a>
+                        <p class="lead">Protect your people and property with the most experienced consultants in Colorado</p>
+                        <a href="#contact"><button class="btn btn-info">contact us</button></a>
                     </div>
                     <a class="absolute-bottom text-center" href="#about">&#9660;</a>
                 </div>
@@ -54,72 +54,93 @@
         </section>
         <section id="about">
             <div class="container">
-                <h2>Highly Experienced Guards Providing Customized Security Solutions with Superior Service</h2>
-                <figure>
-                    <img alt="security badge" src="assets/img/guard-icon.png">
-                    <figcaption>Experienced Guards</figcaption>
-                    <p>Our guards undergo rigorous professional screening and extensive training. We hire the best, and we never stop improving.</p>
-                </figure>
-                <figure>
-                    <img alt="tailor made" src="assets/img/tailor-icon.png">
-                    <figcaption>Custom Security Solutions</figcaption>
-                    <p>When it comes to protecting your people and property, nothing is one size fits all. We tailor everything to each client's needs.</p>
-                </figure>
-                <figure>
-                    <img alt="handshake" src="assets/img/handshake-icon.png">
-                    <figcaption>Superior Client Service</figcaption>
-                    <p>In a world of heghtened awareness, a personal touch goes a long way. Our attention to customer service keeps people happier and safer.</p>
-                </figure>
-                <h3>Trusted By</h3>
-                <ul id="clients">
-                    <li>Larimer Square</li>
-                    <li>Placeholder</li>
-                    <li>Placeholder</li>
-                    <li>Placeholder</li>
+                <h2 class="text-center">About us</h2>
+                <p class="lead text-muted text-center">Highly Experienced Guards Providing Customized Security Solutions with Superior Service</p>
+                <div class="row down-10 text-center">
+                    <figure class="col-sm-4">
+                        <img alt="security badge" src="assets/img/guard-icon.png">
+                        <figcaption>Experienced Guards</figcaption>
+                        <p>Our guards undergo rigorous professional screening and extensive training. We hire the best, and we never stop improving.</p>
+                    </figure>
+                    <figure class="col-sm-4">
+                        <img alt="tailor made" src="assets/img/tailor-icon.png">
+                        <figcaption>Custom Security Solutions</figcaption>
+                        <p>When it comes to protecting your people and property, nothing is one size fits all. We tailor everything to each client's needs.</p>
+                    </figure>
+                    <figure class="col-sm-4">
+                        <img alt="handshake" src="assets/img/handshake-icon.png">
+                        <figcaption>Superior Client Service</figcaption>
+                        <p>In a world of heghtened awareness, a personal touch goes a long way. Our attention to customer service keeps people happier and safer.</p>
+                    </figure>
+                </div>
+                <h3 class="text-center down-10">Trusted By</h3>
+                <ul id="clients" class="row text-center down-5">
+                    <li class="col-sm-3">Larimer Square</li>
+                    <li class="col-sm-3">Placeholder</li>
+                    <li class="col-sm-3">Placeholder</li>
+                    <li class="col-sm-3">Placeholder</li>
                 </ul>
             </div>
         </section>
         <section id="team">
             <div class="container">
-                <h2>Our Team</h2>
-                <p>Mackintosh Security has a commitment to hiring, training, and retaining the very best team in the industry. From the top down our people exemplify high skill, attention to detail, and a service mindset.</p>
-                <figure>
-                    <img alt="Luis Mackintosh" src="assets/img/LuisMackintosh.jpg">
-                    <figcaption>Luis Mackintosh</figcaption>
-                    <p>Luis Mackintosh is a seasoned security professional who has received three different promotions within the past four years. He has had zero serious incidents under security management. He has one year of experience working as a Private
-                        Investigator, five years of armed security experience and two years of unarmed security experience. He demonstrates exceptional communication skills with considerable expertise in verbal conflict communications, defensive tactics
-                        and security monitoring.</p>
-                </figure>
-                <figure>
-                    <img alt="Rudy Serna" src="assets/img/RudySerna.jpg">
-                    <figcaption>Rudy Serna</figcaption>
-                    <p>Rudy Serna served as a Marine Sergeant in the Marine Corps for five years. He was in the Honor Society at Metro University where he received a Bachelor’s Degree in Criminal Justice. He is an Armed Security professional who is able
-                        to confidently make effective decisions in a high-stress environment. He has received extensive fire arms training and certification and is fluent in sign language.</p>
-                </figure>
-                <figure>
-                    <img alt="Kevin Megallan" src="assets/img/Kevin Megallan.jpg">
-                    <figcaption>Kevin Megallan</figcaption>
-                    <p>Kevin Megallan holds a Bachelor’s Degree in Criminal Justice and successfully completed the Denver Sheriff’s Academy Training Program. He is an extremely conscientious individual who demonstrates exceptional skills in verbal confrontation
-                        and defense tactics.</p>
-                </figure>
-                <a target="_blank" href="mailto:luis@mackintoshsecurity.com?subject=Careers"><button>Join Our Team</button></a>
+                <h2 class="text-center">Our Team</h2>
+                <p class="lead text-center text-muted">Mackintosh Security has a commitment to hiring, training, and retaining the very best team in the industry. From the top down our people exemplify high skill, attention to detail, and a service mindset.</p>
+                <div class="row down-10">
+                    <figure class="col-sm-4">
+                        <img alt="Luis Mackintosh" src="assets/img/LuisMackintosh.jpg">
+                        <figcaption>Luis Mackintosh</figcaption>
+                        <p>Luis Mackintosh is a seasoned security professional who has received three different promotions within the past four years. He has had zero serious incidents under security management. He has one year of experience working as a
+                            Private Investigator, five years of armed security experience and two years of unarmed security experience. He demonstrates exceptional communication skills with considerable expertise in verbal conflict communications, defensive
+                            tactics and security monitoring.</p>
+                    </figure>
+                    <figure class="col-sm-4">
+                        <img alt="Rudy Serna" src="assets/img/RudySerna.jpg">
+                        <figcaption>Rudy Serna</figcaption>
+                        <p>Rudy Serna served as a Marine Sergeant in the Marine Corps for five years. He was in the Honor Society at Metro University where he received a Bachelor’s Degree in Criminal Justice. He is an Armed Security professional who is able
+                            to confidently make effective decisions in a high-stress environment. He has received extensive fire arms training and certification and is fluent in sign language.</p>
+                    </figure>
+                    <figure class="col-sm-4">
+                        <img alt="Kevin Megallan" src="assets/img/Kevin Megallan.jpg">
+                        <figcaption>Kevin Megallan</figcaption>
+                        <p>Kevin Megallan holds a Bachelor’s Degree in Criminal Justice and successfully completed the Denver Sheriff’s Academy Training Program. He is an extremely conscientious individual who demonstrates exceptional skills in verbal confrontation
+                            and defense tactics.</p>
+                    </figure>
+                </div>
+                <a target="_blank" class="pull-right" href="mailto:luis@mackintoshsecurity.com?subject=Careers"><button>Join Our Team</button></a>
             </div>
         </section>
         <section id="contact">
             <div class="container">
                 <h2>Contact Us</h2>
-                <form id="contact_form">
-                    <label for="contact_form_full_name">Name</label>
-                    <input id="contact_form_full_name" required type="text" name="full_name">
-                    <label for="contact_form_company">Company</label>
-                    <input id="contact_form_company" type="text" name="company">
-                    <label for="contact_form_email">email</label>
-                    <input id="contact_form_email" required type="email" name="email">
-                    <label for="contact_form_phone">Phone</label>
-                    <input id="contact_form_phone" type="tel" name="phone">
-                    <label for="contact_form_message">Message</label>
-                    <textarea id="contact_form_message" required name="message"></textarea>
-                    <button type="submit">Send</button>
+                <form id="contact_form" class="down-10">
+                    <fieldset class="row">
+                        <div class="col-sm-6">
+                            <label for="contact_form_full_name">Name</label>
+                            <input id="contact_form_full_name" required type="text" name="full_name">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="contact_form_company">Company</label>
+                            <input id="contact_form_company" type="text" name="company">
+                        </div>
+                    </fieldset>
+                    <fieldset class="row">
+                        <div class="col-sm-6">
+                            <label for="contact_form_email">Email</label>
+                            <input id="contact_form_email" required type="email" name="email">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="contact_form_phone">Phone</label>
+                            <input id="contact_form_phone" type="tel" name="phone">
+                        </div>
+                    </fieldset>
+                    <fieldset class="row">
+                        <div class="col-sm-12">
+                            <label for="contact_form_message">Message</label>
+                            <textarea id="contact_form_message" rows="8" required name="message"></textarea>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="pull-right btn btn-success">Send</button>
                 </form>
             </div>
         </section>

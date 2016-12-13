@@ -16,3 +16,5 @@ $('a[href*="#"]:not([href="#"])').click(function() {
 $('#contact_form').submit(function(){
   event.preventDefault();
 });
+
+//navbar add class inverse on 100 from top
