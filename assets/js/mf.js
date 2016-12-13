@@ -26,10 +26,14 @@ $('#contact_form').submit(function() {
             body: $('#contact_form_message').val()
         };
         $.ajax({
-            url: "https://formspree.io/patrauls@gmail.com",
+            url: "https://formspree.io/luis@mackintoshsecurity.com",
             method: "POST",
             data: {
-                message: "From: " + message.sender + " with " + message.company + "\n" + message.phone + "\nReply to: " + message.email + "\n" + message.body
+                message: "From: " + message.sender +
+                " with " + message.company +
+                "\nCall: " + message.phone +
+                "\nReply to: " + message.email +
+                "\n" + message.body
             },
             dataType: "json"
         });
