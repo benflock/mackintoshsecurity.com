@@ -2,6 +2,9 @@
 li {
   list-style: none;
 }
+ul {
+  padding: 0;
+}
 a:link, a:visited {
   color: inherit;
   text-decoration: inherit;
@@ -9,13 +12,33 @@ a:link, a:visited {
 }
 nav {
   color: #fff;
+  transition: background-color, .5s;
 }
 section {
+  position: relative;
   min-height: 100vh;
 }
-section, nav {
+main, header, footer {
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+.no-border {
+  border: none;
+}
+.no-background {
+  background-color: rgba(0,0,0,0);
+}
+.em2 {
+  font-size: 2em;
+}
+.tall-10 {
+  height: 4vh;
+}
+.tall-10 img {
+  height: 100%;
 }
 .spacer {
   min-height: 50vh;
@@ -64,10 +87,11 @@ header {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 1000;
 }
 /*LANDING*/
 #landing {
-  /*background-image: url(../img/larimer.jpg);*/
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/larimer.jpg);
   background-color: black;
   background-size: cover;
   background-attachment: fixed;
@@ -79,8 +103,14 @@ header {
   right: 0;
   left: 0;
 }
-.down-50 {
-  margin-top: 40vh;
+.margin-5vh-auto {
+  margin: 5vh auto;
+}
+.em1-2 {
+  font-size: 1.2em;
+}
+.down-30 {
+  margin-top: 30vh;
 }
 .down-5 {
   margin-top: 5vh;

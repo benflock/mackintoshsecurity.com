@@ -30,10 +30,10 @@ $('#contact_form').submit(function() {
             method: "POST",
             data: {
                 message: "From: " + message.sender +
-                " with " + message.company +
-                "\nCall: " + message.phone +
-                "\nReply to: " + message.email +
-                "\n" + message.body
+                    " with " + message.company +
+                    "\nCall: " + message.phone +
+                    "\nReply to: " + message.email +
+                    "\n" + message.body
             },
             dataType: "json"
         });
@@ -42,4 +42,9 @@ $('#contact_form').submit(function() {
         console.log('I am message', message);
     }
 });
-//navbar add class inverse on 100 from top
+//navbar remove class no-background-border on 100 from top
+var scroll_pos = 0;
+$(document).scroll(function() {
+    scroll_pos = $(this).scrollTop();
+    scroll_pos > 100 ? $('nav').removeClass('no-background') : $('nav').addClass('no-background');
+});
