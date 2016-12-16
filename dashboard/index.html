@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mackintosh Security provides superior service in customized security consulting from professional screened, highly experienced guards in the Denver Metro area">
+    <title>Mackintosh Security</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="../assets/css/mf.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <script defer type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script defer type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script defer type="text/javascript" src="../assets/js/mf.js"></script>
+    <script defer type="text/javascript" src="../assets/js/app.js"></script>
+    <script defer type="text/javascript" src="https://apis.google.com/js/client.js?onload=checkAuth"></script>
+</head>
+
+<body>
+    <!-- <div id="authorize-div" style="display: none">
+      <span>Authorize access to Google Calendar API</span> -->
+    <!--Button for the user to click to initiate auth sequence -->
+    <!-- <button id="authorize-button" onclick="handleAuthClick(event)">
+        Authorize
+      </button>
+    </div> -->
+    <header>
+        <nav class="navbar navbar-default no-radius no-border">
+            <div class="container">
+                <a class="navbar-brand pull-left">
+                    <img class="pull-left" alt="Mackintosh Security Logo" src="../assets/img/logo.png">
+
+                    <div id="profile_caption" class="tiny bold line-height-1">MACKINTOSH SECURITY</div>
+                </a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#nav_links">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav_links">
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a href="#about">DASHBOARD</a></li>
+                        <li><a href="#team">SCHEDULE</a></li>
+                        <li><a href="#contact">HANDBOOK</a></li>
+                        <li><a href="#">LOGOUT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div id="next_shift" class="col-md-4">
+                        <p class="text-muted">Next Shift:</p>
+                        <h2></h2>
+                        <p id="time"></p>
+                        <p id="location"></p>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div id="schedule" class="col-md-7 flexbox">
+                        <h2 class="text-muted">CURRENT SCHEDULE</h2>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

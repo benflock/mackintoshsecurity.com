@@ -1,0 +1,22 @@
+.day {
+  display: inline-block;
+  margin: 0 .5rem 3rem .5rem;
+  font-size: 2em;
+  width: 8rem;
+  height: 8rem;
+  background-color: #fefefe;
+  border: .2rem solid #aaa;
+  box-shadow: 0 0 0 .1rem #ddd;
+  color: #666;
+  text-align: center;
+  line-height: 8rem;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-radius: .15rem;
+  font-weight: 200;
+}
+.highlighted {
+  border: .2rem solid rgba(200,0,0,0.4);
+  box-shadow: 0 0 0 .1rem rgba(200,0,0,0.1);
+  color: rgba(200,0,0,1);
+}
