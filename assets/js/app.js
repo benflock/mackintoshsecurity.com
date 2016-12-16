@@ -165,3 +165,4 @@ var weekday = ['SUNDAY','MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATU
 $('#next_shift h2').html(weekday[next_day]);
 $('#time').html(new Date(upcoming[0][next_shift.toISOString()][0].start.dateTime).toLocaleTimeString() + ' - ' + new Date(upcoming[0][next_shift.toISOString()][0].end.dateTime).toLocaleTimeString());
 $('#location').html(upcoming[0][next_shift.toISOString()][0].location);
+$('iframe').attr('src', "https://www.google.com/maps/embed/v1/place?key=AIzaSyDqLl0PzeqFJE5dLUv81Y5qgmyK1WUcgfw&q=" + upcoming[0][next_shift.toISOString()][0].location);
