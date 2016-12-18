@@ -10,6 +10,7 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="../assets/css/mf.css">
     <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="icon" href="../assets/img/icon.png" type="image/png" sizes="16x16">
     <script defer type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script defer type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script defer type="text/javascript" src="../assets/js/mf.js"></script>
@@ -18,13 +19,6 @@
 </head>
 
 <body>
-    <!-- <div id="authorize-div" style="display: none">
-      <span>Authorize access to Google Calendar API</span> -->
-    <!--Button for the user to click to initiate auth sequence -->
-    <!-- <button id="authorize-button" onclick="handleAuthClick(event)">
-        Authorize
-      </button>
-    </div> -->
     <header>
         <nav class="navbar navbar-default no-radius no-border">
             <div class="container">
@@ -59,14 +53,13 @@
                         <p id="time"></p>
                         <p id="location"></p>
                         <div id="map">
-                            <iframe frameborder="0" style="border:0; width: 100%; height: 30vh;" allowfullscreen>
-</iframe>
+                            <iframe frameborder="0" style="border:0; width: 100%; height: 50vh;" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="col-md-1"></div>
                     <div id="schedule" class="col-md-7 flexbox">
                         <h2 class="text-muted">CURRENT SCHEDULE</h2>
-
+                        <!-- the schedule boxes are rendered here! -->
                     </div>
                 </div>
             </div>

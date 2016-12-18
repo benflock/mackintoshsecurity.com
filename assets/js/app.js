@@ -155,7 +155,7 @@ for (i = 0; i < mine.length; i++){
     upcoming.push(mine[i]);
   }
 }
-
+//about here is where I've gone all the way off the deep end. I apologize for the schizophrenic code.
 var next_shift = new Date(Object.keys(upcoming[0])[0]);
 console.log('upcoming', upcoming[0]);
 console.log('mine', mine);
