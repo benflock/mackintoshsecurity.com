@@ -11,6 +11,9 @@ a:link, a:visited {
   text-decoration: inherit;
   cursor: pointer;
 }
+img {
+  height: 100%;
+}
 nav {
   color: #fff;
   transition: background-color, .5s;
@@ -79,6 +82,9 @@ textarea {
 }
 .down-25 {
   margin-top: 25vh;
+}
+.em1-5 {
+  font-size: 1.5em;
 }
 .em2 {
   font-size: 2em;
