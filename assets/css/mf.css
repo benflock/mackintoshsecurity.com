@@ -35,9 +35,8 @@ main, header, footer {
 h1 {
   font-family: Oswald;
 }
-h3 {
+h2, h3, h4, h5 {
   font-family: Catamaran;
-  font-weight: 400;
 }
 #team img {
   height: 100%;
@@ -135,6 +134,9 @@ textarea {
 .no-display {
   display: none;
 }
+.no-padding {
+  padding: 0;
+}
 .no-radius {
   border-radius: 0;
 }
@@ -177,7 +179,7 @@ header {
 }
 /*LANDING*/
 #landing {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/larimer.jpg);
+  background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url(../img/larimer.jpg);
   background-color: black;
   background-size: cover;
   background-attachment: fixed;
