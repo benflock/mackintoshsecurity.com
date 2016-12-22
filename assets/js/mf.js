@@ -4,8 +4,8 @@ var scope = 'email profile https://www.googleapis.com/auth/calendar.readonly',
     response_type = 'token',
     client_id = '19749026565-sel10tirv0a9t0hnl6cumr54b07perib.apps.googleusercontent.com'
 
-$('#login').attr('href', 'https://accounts.google.com/o/oauth2/v2/auth?scope='+ scope +
-'&redirect_uri=' + redirect_uri + '&response_type=token&client_id=' + client_id);
+$('#login').attr('href', 'https://accounts.google.com/o/oauth2/v2/auth?scope=' + scope +
+    '&redirect_uri=' + redirect_uri + '&response_type=token&client_id=' + client_id);
 
 //fade in landing
 $('#first_words h1').fadeIn(800);
@@ -61,12 +61,14 @@ var scroll_pos = 0;
 $(document).scroll(function() {
     scroll_pos = $(this).scrollTop();
     if (scroll_pos > 100) {
-      $('nav').removeClass('no-background');
-      $('nav li a').removeClass('white-font');
-      $('#first_words').fadeOut(200);
+        $('nav').removeClass('no-background');
+        $('nav li a').removeClass('white-font');
+        $('#first_words').fadeOut(200);
+        $('#company').fadeIn(300);
     } else {
-      $('nav').addClass('no-background');
-      $('nav li a').addClass('white-font');
-      $('#first_words').fadeIn(500);
+        $('nav').addClass('no-background');
+        $('nav li a').addClass('white-font');
+        $('#first_words').fadeIn(500);
+        $('#company').fadeOut(300);
     }
 });

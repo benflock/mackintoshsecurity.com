@@ -180,6 +180,9 @@ header {
   left: 0;
   z-index: 1000;
 }
+#company {
+  display: none;
+}
 /*LANDING*/
 #landing {
   background: linear-gradient(to bottom right, rgba(6,23,129,0.95), rgba(0,0,0,0.9)), url(../img/larimer.jpg);
