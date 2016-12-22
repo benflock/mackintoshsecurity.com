@@ -128,7 +128,6 @@ for (i = 0; i < 14; i++) {
                 time += '\n' + start.toLocaleTimeString() + ' - ' + end.toLocaleTimeString();
                 highlight = ' highlighted';
                 schedule[i][scheduleISOStrings[i]].me = true;
-                console.log('i am schedule', schedule);
             }
         });
     }
@@ -148,18 +147,30 @@ for(i = 0; i < 14; i++){
 var upcoming = [];
 //find the smallest higher than today
 for (i = 0; i < mine.length; i++){
-  console.log('mine i ', mine[i]);
   var a = mine[i][Object.keys(mine[i])[0]][0].start.dateTime;
-  console.log('a', new Date(a), 'today', new Date());
   if(new Date(a) >= new Date()) {
     upcoming.push(mine[i]);
   }
 }
+// SIGN OUT
+$('#logout').click(function(event){
+  signOut();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 //about here is where I've gone all the way off the deep end. I apologize for the schizophrenic code.
 var next_shift = new Date(Object.keys(upcoming[0])[0]);
-console.log('upcoming', upcoming[0]);
-console.log('mine', mine);
-console.log('next shift', next_shift);
 var next_day = next_shift.getDay();
 var weekday = ['SUNDAY','MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY'];
 $('#next_shift h2').html(weekday[next_day]);

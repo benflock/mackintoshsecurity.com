@@ -37,7 +37,7 @@
                         <li><a href="#about">DASHBOARD</a></li>
                         <li><a href="#team">SCHEDULE</a></li>
                         <li><a href="#contact">HANDBOOK</a></li>
-                        <li><a href="#">LOGOUT</a></li>
+                        <li id="logout"><a href="#">LOGOUT</a></li>
                     </ul>
                 </div>
             </div>
@@ -65,8 +65,9 @@
                     <div id="request" class="col-md-7 flexbox">
                         <h2 class="text-muted">Requests</h2>
                         <form class="row no-padding">
-                            <input id="request_form_id" type="hidden">
-                            <div class="col-sm-3">
+                            <input id="request_form_name" name="request_form_name" type="hidden">
+                            <input id="request_form_email" name="request_form_email" type="hidden">
+                            <div class="col-sm-2">
                                 <label for="request_form_start_time">start time</label>
                                 <select id="request_form_start_time" name="end_time">
                                   <option value="morning">morning</option>
@@ -76,13 +77,13 @@
                                   <option value="all_day">all day</option>
                               </select>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                                 <label for="request_form_start">start date</label>
-                                <input id="request_form_start" type="date" name="start">
+                                <input required class="width-100" id="request_form_start" type="date" name="start">
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-2">
                                 <label for="request_form_end_time">end time</label>
-                                <select id="request_form_end_time" name="end_time">
+                                <select class="width-100" id="request_form_end_time" name="end_time">
                                   <option value="morning">morning</option>
                                   <option value="noon">noon</option>
                                   <option value="afternoon">afternoon</option>
@@ -90,13 +91,15 @@
                                   <option value="all_day">all day</option>
                               </select>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                                 <label for="request_form_end">end date</label>
-                                <input id="request_form_end" type="date" name="end">
+                                <input required class="width-100" id="request_form_end" type="date" name="end">
                             </div>
-                            <label for="request_form_reason">Reason for Request</label>
-                            <textarea class="col-sm-12" id="request_form_reason" name="reason"></textarea>
-                            <input type="submit">
+                            <div class="col-sm-12">
+                                <label for="request_form_reason">Reason for Request</label>
+                                <textarea class="block width-100" id="request_form_reason" name="reason"></textarea>
+                                <input type="submit">
+                            </div>
                         </form>
                     </div>
                 </div>
