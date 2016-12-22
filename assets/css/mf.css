@@ -182,7 +182,7 @@ header {
 }
 /*LANDING*/
 #landing {
-  background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url(../img/larimer.jpg);
+  background: linear-gradient(to bottom right, rgba(6,23,129,0.95), rgba(0,0,0,0.9)), url(../img/larimer.jpg);
   background-color: black;
   background-size: cover;
   background-attachment: fixed;
