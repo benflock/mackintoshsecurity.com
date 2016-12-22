@@ -7,6 +7,10 @@ var scope = 'email profile https://www.googleapis.com/auth/calendar.readonly',
 $('#login').attr('href', 'https://accounts.google.com/o/oauth2/v2/auth?scope='+ scope +
 '&redirect_uri=' + redirect_uri + '&response_type=token&client_id=' + client_id);
 
+//fade in landing
+$('#first_words h1').fadeIn(800);
+$('#first_words h3').delay(800).fadeIn(500);
+$('#first_words a').delay(1300).fadeIn(500);
 
 // smooth scrolling
 $('a[href*="#"]:not([href="#"])').click(function() {
@@ -16,7 +20,7 @@ $('a[href*="#"]:not([href="#"])').click(function() {
         if (target.length) {
             $('html, body').animate({
                 scrollTop: target.offset().top
-            }, 500);
+            }, 1000);
             return false;
         }
     }
@@ -56,5 +60,13 @@ $('#contact_form').submit(function() {
 var scroll_pos = 0;
 $(document).scroll(function() {
     scroll_pos = $(this).scrollTop();
-    scroll_pos > 100 ? $('nav').removeClass('no-background') : $('nav').addClass('no-background');
+    if (scroll_pos > 100) {
+      $('nav').removeClass('no-background');
+      $('nav li a').removeClass('white-font');
+      $('#first_words').fadeOut(200);
+    } else {
+      $('nav').addClass('no-background');
+      $('nav li a').addClass('white-font');
+      $('#first_words').fadeIn(500);
+    }
 });
