@@ -146,6 +146,9 @@ textarea {
 .spaced {
   letter-spacing: .18em;
 }
+.spacing-tight {
+  letter-spacing: -0.06em;
+}
 .spacer {
   min-height: 50vh;
 }
@@ -180,8 +183,15 @@ header {
   left: 0;
   z-index: 1000;
 }
+#nav_links {
+  padding-right: 0;
+  padding-left: 0;
+}
 #company {
   display: none;
+}
+#login {
+  padding-right: 0;
 }
 /*LANDING*/
 #landing {
