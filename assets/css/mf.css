@@ -65,11 +65,13 @@ textarea {
 .box-shadow-gray {
   box-shadow: 0 0 0 .5em rgba(0,0,0,0.5);
 }
+
 .circle {
   border-radius: 50%;
 }
 .city {
-  background-image: url(../img/skyline.jpg);
+  background: linear-gradient(to bottom right, rgba(6,23,129,0.9), rgba(0,0,0,0.7)), url(../img/skyline.jpg);
+  /*background-image: url(../img/skyline.jpg);*/
   background-attachment: fixed;
   background-size: cover;
 }
@@ -117,7 +119,8 @@ textarea {
   overflow: hidden;
 }
 .natural {
-  background-image: url(../img/nature.jpg);
+  background: linear-gradient(to bottom right, rgba(6,23,129,0.55), rgba(0,0,0,0.2)), url(../img/nature.jpg);
+  /*background-image: url(../img/nature.jpg);*/
   background-attachment: fixed;
   background-size: cover;
 }
@@ -193,6 +196,9 @@ header {
 #login {
   padding-right: 0;
 }
+.nav li a {
+  transition: color .5s;
+}
 /*LANDING*/
 #landing {
   background: linear-gradient(to bottom right, rgba(6,23,129,0.95), rgba(0,0,0,0.9)), url(../img/larimer.jpg);
@@ -200,6 +206,21 @@ header {
   background-size: cover;
   background-attachment: fixed;
   color: #ddd;
+}
+#landing #background-mesh {
+position: absolute;
+bottom: 0;
+  opacity: .02;
+  width: 100%;
+  height: auto;
+}
+#landing #hexgrid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: auto;
+  opacity: .1;
 }
 #first_words > * {
   display: none;

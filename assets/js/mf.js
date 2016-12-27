@@ -9,8 +9,8 @@ $('#login').attr('href', 'https://accounts.google.com/o/oauth2/v2/auth?scope=' +
 
 //fade in landing
 $('#first_words h1').fadeIn(800);
-$('#first_words h3').delay(800).fadeIn(500);
-$('#first_words a').delay(1300).fadeIn(500);
+$('#first_words h3').delay(400).fadeIn(500);
+$('#first_words a').delay(800).fadeIn(500);
 
 // smooth scrolling
 $('a[href*="#"]:not([href="#"])').click(function() {
