@@ -152,9 +152,11 @@ for (i = 0; i < mine.length; i++){
     upcoming.push(mine[i]);
   }
 }
+
 // SIGN OUT
 $('#logout').click(function(event){
-  signOut();
+  localStorage.clear();
+  window.location = 'http://mackintoshsecurity.com';
 });
 
 
