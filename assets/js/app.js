@@ -170,10 +170,13 @@ $('#logout').click(function(event) {
 
 
 //about here is where I've gone all the way off the deep end. I apologize for the schizophrenic code.
-var next_shift = new Date(Object.keys(upcoming[0])[0]);
-var next_day = next_shift.getDay();
-var weekday = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
-$('#next_shift h2').html(weekday[next_day]);
-$('#time').html(new Date(upcoming[0][next_shift.toISOString()][0].start.dateTime).toLocaleTimeString() + ' - ' + new Date(upcoming[0][next_shift.toISOString()][0].end.dateTime).toLocaleTimeString());
-$('#location').html(upcoming[0][next_shift.toISOString()][0].location);
-$('iframe').attr('src', "https://www.google.com/maps/embed/v1/place?key=AIzaSyDqLl0PzeqFJE5dLUv81Y5qgmyK1WUcgfw&q=" + upcoming[0][next_shift.toISOString()][0].location);
+if (upcoming) {
+    var next_shift = new Date(Object.keys(upcoming[0])[0]),
+        next_day = next_shift.getDay(),
+        weekday = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
+
+    $('#next_shift h2').html(weekday[next_day]);
+    $('#time').html(new Date(upcoming[0][next_shift.toISOString()][0].start.dateTime).toLocaleTimeString() + ' - ' + new Date(upcoming[0][next_shift.toISOString()][0].end.dateTime).toLocaleTimeString());
+    $('#location').html(upcoming[0][next_shift.toISOString()][0].location);
+    $('iframe').attr('src', "https://www.google.com/maps/embed/v1/place?key=AIzaSyDqLl0PzeqFJE5dLUv81Y5qgmyK1WUcgfw&q=" + upcoming[0][next_shift.toISOString()][0].location);
+}
