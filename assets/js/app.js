@@ -102,17 +102,19 @@ if (localStorage.APIdata) {
     var dataAPI = JSON.parse(localStorage.APIdata);
     var shifts = dataAPI.items;
 }
-shifts.forEach(function(a, b, c) {
-    schedule.forEach(function(d, e, f) {
-        var k = Object.keys(d)[0],
-            n = e > 0 ? e - 1 : 0,
-            x = f[n],
-            k2 = Object.keys(x)[0];
-        if (new Date(a.start.dateTime) < new Date(k) && new Date(a.start.dateTime) >= new Date(k2)) {
-            f[n][k2].push(a);
-        }
+if (shifts) {
+    shifts.forEach(function(a, b, c) {
+        schedule.forEach(function(d, e, f) {
+            var k = Object.keys(d)[0],
+                n = e > 0 ? e - 1 : 0,
+                x = f[n],
+                k2 = Object.keys(x)[0];
+            if (new Date(a.start.dateTime) < new Date(k) && new Date(a.start.dateTime) >= new Date(k2)) {
+                f[n][k2].push(a);
+            }
+        });
     });
-});
+}
 
 function equalsMe(x, y, z) {
     return x.displayName == localStorage.displayName;
@@ -139,29 +141,25 @@ for (i = 0; i < 14; i++) {
 }
 var mine = [];
 
-for(i = 0; i < 14; i++){
-  if(schedule[i][scheduleISOStrings[i]].hasOwnProperty('me')){
-    mine.push(schedule[i]);
-  }
+for (i = 0; i < 14; i++) {
+    if (schedule[i][scheduleISOStrings[i]].hasOwnProperty('me')) {
+        mine.push(schedule[i]);
+    }
 }
 var upcoming = [];
 //find the smallest higher than today
-for (i = 0; i < mine.length; i++){
-  var a = mine[i][Object.keys(mine[i])[0]][0].start.dateTime;
-  if(new Date(a) >= new Date()) {
-    upcoming.push(mine[i]);
-  }
+for (i = 0; i < mine.length; i++) {
+    var a = mine[i][Object.keys(mine[i])[0]][0].start.dateTime;
+    if (new Date(a) >= new Date()) {
+        upcoming.push(mine[i]);
+    }
 }
 
 // SIGN OUT
-$('#logout').click(function(event){
-  localStorage.clear();
-  window.location = 'http://mackintoshsecurity.com';
+$('#logout').click(function(event) {
+    localStorage.clear();
+    window.location = 'http://mackintoshsecurity.com';
 });
-
-
-
-
 
 
 
@@ -174,7 +172,7 @@ $('#logout').click(function(event){
 //about here is where I've gone all the way off the deep end. I apologize for the schizophrenic code.
 var next_shift = new Date(Object.keys(upcoming[0])[0]);
 var next_day = next_shift.getDay();
-var weekday = ['SUNDAY','MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY'];
+var weekday = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
 $('#next_shift h2').html(weekday[next_day]);
 $('#time').html(new Date(upcoming[0][next_shift.toISOString()][0].start.dateTime).toLocaleTimeString() + ' - ' + new Date(upcoming[0][next_shift.toISOString()][0].end.dateTime).toLocaleTimeString());
 $('#location').html(upcoming[0][next_shift.toISOString()][0].location);
