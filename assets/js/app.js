@@ -170,7 +170,7 @@ $('#logout').click(function(event) {
 
 
 //about here is where I've gone all the way off the deep end. I apologize for the schizophrenic code.
-if (upcoming) {
+if (upcoming[0]) {
     var next_shift = new Date(Object.keys(upcoming[0])[0]),
         next_day = next_shift.getDay(),
         weekday = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
