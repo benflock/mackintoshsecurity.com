@@ -1,6 +1,6 @@
 //for login
 var scope = 'email profile https://www.googleapis.com/auth/calendar.readonly',
-    redirect_uri = 'https://mackintoshsecurity-c93e5.firebaseapp.com/dashboard',
+    redirect_uri = 'https://mackintoshsecurity.com/dashboard',
     response_type = 'token',
     client_id = '19749026565-sel10tirv0a9t0hnl6cumr54b07perib.apps.googleusercontent.com'
 

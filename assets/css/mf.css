@@ -237,3 +237,6 @@ bottom: 0;
 #contact_form textarea {
   width: 100%;
 }
+@media (max-width: @screen-xs-max) {
+
+}
