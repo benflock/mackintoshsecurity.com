@@ -8,9 +8,9 @@ $('#login').attr('href', 'https://accounts.google.com/o/oauth2/v2/auth?scope=' +
     '&redirect_uri=' + redirect_uri + '&response_type=token&client_id=' + client_id);
 
 //fade in landing
-$('#first_words h1').fadeIn(800);
-$('#first_words h3').delay(400).fadeIn(500);
-$('#first_words a').delay(800).fadeIn(500);
+$('#first_words h1').delay(20).fadeIn(800);
+$('#first_words h3').delay(420).fadeIn(500);
+$('#first_words a').delay(820).fadeIn(500);
 
 // smooth scrolling
 $('a[href*="#"]:not([href="#"])').click(function() {
